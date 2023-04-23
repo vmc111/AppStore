@@ -1,0 +1,19 @@
+/* Write your CSS here */
+.tab {
+  cursor: pointer;
+  margin: 0px;
+  background-color: transparent;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  font-weight: bold;
+
+  border-bottom: solid 2px #7b8794;
+
+  padding: 5px 15px;
+  color: #7b8794;
+}
+.selected-tab {
+  border-bottom: solid 2px #2563eb;
+  color: #2563eb;
+}
