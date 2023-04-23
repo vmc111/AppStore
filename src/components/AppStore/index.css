@@ -55,9 +55,8 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  flex-shrink: 0;
 
-  width: 60%;
+  width: 80%;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
