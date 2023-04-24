@@ -308,7 +308,12 @@ class AppStore extends Component {
     const appListToRender = appListOfTab.filter(eachApp =>
       eachApp.appName.toLowerCase().includes(searchInput.toLowerCase()),
     )
-
+    let extraParagraph
+    if (appListToRender === []) {
+      extraParagraph = ''
+    } else {
+      extraParagraph = <p>No App Matches</p>
+    }
     return (
       <div className="main-container">
         <div className="title-search-div">
@@ -343,6 +348,7 @@ class AppStore extends Component {
             <AppItem item={eachApp} key={eachApp.appId} />
           ))}
         </ul>
+        {extraParagraph}
       </div>
     )
   }
